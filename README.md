@@ -3,30 +3,30 @@ Primera estancia del proyecto Pythonn_Flask_Headline al cual he añadido una int
 
 ## Requisitos:
 Lo primero que necesitamos es tener un entorno virtual, en el caso de que no lo tengamos, lo instalaremos con 
-<code>$ sudo apt-get install python3-venv<code>
+<code>$ sudo apt-get install python3-venv</code>
 
 Ahora nos crearemos un entorno virtual para trabajar con pip e instalar lo necesario
-<code>$ python3 -m venv env<code>
+<code>$ python3 -m venv env</code>
 
 Ya tenemos el entorno virtual, ahora lo iniciaremos con
-<code>$ source env/bin/activate<code>
+<code>$ source env/bin/activate</code>
 
 Y empezaremos a instalar:
-<code>$ pip install flask<code> ---> Para el uso de Flask
-<code>$ pip install feedparser<code> --->  Necesario para leer los RSS de las noticias
+<code>$ pip install flask</code> ---> Para el uso de Flask
+<code>$ pip install feedparser</code> --->  Necesario para leer los RSS de las noticias
 
 Cuando lo tengamos todo, entraremos en la carpeta del proyecto y ejecutaremos 
-<code>export FLASK_APP=prueba.py <code> --> para exportar la app de flask
-<code>flask run<code> --> Para iniciar la aplicación
+<code>export FLASK_APP=prueba.py </code> --> para exportar la app de flask
+<code>flask run</code> --> Para iniciar la aplicación
 
 ## Base de Datos MySql
 Tendremos que crear una base de datos MySql donde almacenaremos los datos, asi que accedemos a nuestro MySql con
-<code>mysql -u root -p<code>
+<code>mysql -u root -p</code>
 Ahora creamos la base de datos prueba, en el caso de que cambiemos el nombre de la base de datos, tendremos que cambiarlo en el     codigo del proyecto
-<code>create database prueba<code>
+<code>create database prueba</code>
 Nos cambiamos a la base de datos creada y creamos la tabla
-<code>use prueba<code>
-<code>CREATE TABLE alumnos (name VARCHAR(30), email VARCHAR(30), password VARCHAR(30));<code>
+<code>use prueba</code>
+<code>CREATE TABLE alumnos (name VARCHAR(30), email VARCHAR(30), password VARCHAR(30));</code>
 
 IMPORTATNTE
 Comprobar vuestro usuario y contraseña y cambiarlo en el código del programa.
