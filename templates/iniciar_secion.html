@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>title</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">Ultimas Noticias</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<a href="/crear_usuario" role="button"  class="btn btn-outline-primary">Crear Usuario</a>
+			</form>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row" style="margin-top: 50px">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="jumbotron">
+					<div class="text-center">
+						<h4>Iniciar Seccion</h4>
+					</div>
+					<form id="registerForm" action="/inicio_secion" method="post">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input name="email" type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input name="password" type="password" class="form-control" id="password" placeholder="Ingresa tu password">
+						</div>
+						<div class="text-center">
+							<br>
+							<button id="register" class="btn btn-primary">Entrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/js/app.js"></script>
+</body>
+</html>
