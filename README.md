@@ -15,10 +15,6 @@ Y empezaremos a instalar:
 <code>$ pip install flask</code> ---> Para el uso de Flask
 <code>$ pip install feedparser</code> --->  Necesario para leer los RSS de las noticias
 
-Cuando lo tengamos todo, entraremos en la carpeta del proyecto y ejecutaremos 
-<code>export FLASK_APP=prueba.py </code> --> para exportar la app de flask
-<code>flask run</code> --> Para iniciar la aplicación
-
 ## Base de Datos MySql
 Tendremos que crear una base de datos MySql donde almacenaremos los datos, asi que accedemos a nuestro MySql con
 <code>mysql -u root -p</code>
@@ -27,6 +23,12 @@ Ahora creamos la base de datos prueba, en el caso de que cambiemos el nombre de 
 Nos cambiamos a la base de datos creada y creamos la tabla
 <code>use prueba</code>
 <code>CREATE TABLE alumnos (name VARCHAR(30), email VARCHAR(30), password VARCHAR(30));</code>
+
+## Iniciar
+Cuando lo tengamos todo, entraremos en la carpeta del proyecto y ejecutaremos 
+<code>export FLASK_APP=prueba.py </code> --> para exportar la app de flask
+<code>flask run</code> --> Para iniciar la aplicación
+
 
 IMPORTATNTE
 Comprobar vuestro usuario y contraseña y cambiarlo en el código del programa.
