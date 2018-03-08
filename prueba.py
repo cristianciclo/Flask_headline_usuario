@@ -63,7 +63,7 @@ def enter():
 			nombre=cursor.fetchone()
 
 
-			session['nombre'] = nombre
+			session['nombre'] = nombre[0]
 			session['email'] = _email
 			feed = feedparser.parse(BBC_FEED)
 			feedn = feedparser.parse(CNN_FEED)
